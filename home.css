@@ -1,0 +1,308 @@
+* {
+    margin: 0;
+    padding: 0vh;
+    box-sizing: border-box;
+}
+
+.logo {
+    font-size: 3rem;
+    position: absolute;
+    left: 1.4vw;
+    cursor: default;
+    font-family: 'Oswald', sans-serif;
+    bottom: 0.2vh;    
+}
+
+nav {
+    width: 100vw;
+    height: 10vh;
+    background-color: #457b9d;
+    color: white;
+    font-size: 1.6rem;
+    position: relative;
+}
+
+.list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 35vw;
+    text-decoration: none;
+    list-style: none;
+    position: absolute;
+    right: 2vw;
+    bottom: 25%;
+}
+
+.li {
+    transition: all 300ms ease;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.li:hover {
+    color: black;
+    transform: scale(1.3);
+}
+
+.background {
+    background-image: url('home-banner.jpg');
+    background-size: cover;
+    width: 100vw;
+
+}
+
+.container {
+    background: rgba(0, 0, 0, 0.2);
+    width: 100vw;
+    height: 180vh;
+    position: relative;
+}
+
+.game-logo {
+    color: rgb(233, 233, 233);
+    font-size: 4rem;
+    position: absolute;
+    left: 29vw;
+    top: 15vh;
+    font-family: 'Oswald', sans-serif;
+}
+
+.game-logo-background {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.intro {
+    font-family: 'Neucha', cursive;
+    font-size: 1.4rem;
+    line-height: 9vh;
+    position: absolute;
+    top: 35vh;
+    margin: 5vw;
+    color: rgba(233, 233, 233);
+}
+
+.play-now-div {
+    position: relative;
+    width: 15vw;
+    height: 10vh;
+    background-color: #457b9d;
+    bottom: 20vh;
+    left: 40vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 300ms ease;
+    border-radius: 10px;
+}
+
+.play-now-div:hover {
+    background-color: white;
+    color: #457b9d;
+}
+
+.play-now-link {
+    width: 15vw;
+    height: 10vh;
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    font-family: 'Oswald', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 300ms ease;
+    border-radius: 10px;
+
+}
+
+.play-now-link:hover {
+    background-color: white;
+    color: #457b9d;
+}
+
+.intro-big {
+    width: 90vw;
+    height: 50vh;
+    background-color: #457b9d;
+    border-radius: 15px;
+    position: relative;
+    left: 4vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+
+}
+
+.title {
+    font-size: 2.4rem;
+    position: relative;
+    right: 25vw;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+.p-text {
+    font-size: 1.5rem;
+    position: absolute;
+    right: 25vw;
+    top: 20vh;
+    left: 4vw;
+}
+
+.spaceship {
+    width: 15vw;
+    position: relative;
+    left: 33vw;
+    bottom: 10vh;
+}
+
+@media (max-width:400px){
+
+    nav {
+        height: 7vh;
+    }
+
+    .logo {
+        font-size: 2rem;
+    }
+
+    .li {
+        font-size: 1rem;
+    }
+
+    .list {
+        width: 50vw;
+    }
+
+    .game-logo {
+        font-size: 2.2rem;
+        left: 20vw;
+    }
+
+    .intro {
+        top: 26vh;
+        font-size: 1.2rem;
+    }
+
+    .slideshow-container {
+        width: 90vw;
+        top: 100vh;
+        left: 5vw;
+    }
+
+    .intro-big {
+        height: 65vh;
+
+    }
+
+    .title {
+        font-size: 1.5rem;
+        right: 0vw;
+        bottom: 10vh;
+    }
+
+    .p-text {
+        font-size: 1.2rem;
+        top: 9vh;
+        width: 85vw;
+        line-height: 5vh;
+    }
+
+    .spaceship {
+        width: 30vw;
+        left: 0vw;
+        top: 10vh;
+    }
+
+    .play-now-div {
+        bottom: 7vh;
+        width: 40vw;
+        left: 30vw;
+    }
+
+    .play-now-link {
+        font-size: 1.5rem;
+        bottom: 7vh;
+        width: 40vw;
+        left: 30vw;
+    }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 800px){
+
+    nav {
+        height: 15vh;
+    }
+
+    .container {
+        height: 200vh;
+    }
+
+    .logo {
+        font-size: 2rem;
+        bottom: 1.4vh;
+    }
+
+    .li {
+        font-size: 1.2rem;
+    }
+
+    .game-logo {
+        font-size: 2.8rem;
+        top: 8vh;
+        left: 30vw;
+    }
+
+    .intro {
+        line-height: 10vh;
+        top: 30vh;
+    }
+
+    .slideshow-container {
+        width: 70vw;
+        top: 80vh;
+    }
+
+    .intro-big {
+        height: 75vh;
+        top: 5vh;
+    }
+
+    .title {
+        font-size: 2rem;
+        right: 20vw;
+        bottom: 5vh;
+    }
+
+    .p-text {
+        font-size: 1.2rem;
+        left: 3vw;
+        top: 25vh;
+    }
+
+    .spaceship {
+        width: 20vw;
+        bottom: 15vh;
+    }
+
+    .play-now-div {
+        width: 20vw;
+        bottom: 9vh;
+        height: 15vh;
+    }
+
+    .play-now-link {
+        width: 20vw;
+        bottom: 9vh;
+        height: 15vh;
+        font-size: 1.5rem;
+    }
+}

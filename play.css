@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0vh;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: visible !important;
+    height: 100vh;
+}
+
+.logo {
+    font-size: 3rem;
+    position: absolute;
+    left: 1.4vw;
+    cursor: default;
+    font-family: 'Oswald', sans-serif;
+    bottom: 0.2vh;    
+}
+
+nav {
+    width: 100vw;
+    height: 10vh;
+    background-color: #457b9d;
+    color: white;
+    font-size: 1.6rem;
+    position: relative;
+}
+
+.list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 35vw;
+    text-decoration: none;
+    list-style: none;
+    position: absolute;
+    right: 2vw;
+    bottom: 25%;
+}
+
+.li {
+    transition: all 300ms ease;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.li:hover {
+    color: black;
+    transform: scale(1.3);
+}
+
+.background {
+    width: 100vw;
+    background-image: url('background.jpg');
+    background-size: cover;
+    height: 200vh;
+    overflow: hidden;
+}
+
+.game-frame {
+    width: 90vw;
+    height: 90vh;;
+    background-color: rgb(255, 255, 255, 0.7);
+    position: relative;
+    left: 5vw;
+    top: 5vh;
+}
+
+.game-container {
+    width: 100vw;
+    height: 90vh;
+    position: relative;
+    top: 5vh;
+    left: 25vw;
+}
+
+
+.black-background{
+    height: 200vh;
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.6);
+    position: relative;
+}
+
+
+.how-to-play {
+    background-color: #457b9d;
+    width: 35vw;
+    height: 8vh;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    position: relative;
+    bottom: 85vh;
+    left: 31vw;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.how-text-container {
+    background-color: #457b9d;
+    width: 50vw;
+    height: 25vh;
+    position: relative;
+    bottom: 80vh;
+    left: 25vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+
+}
+
+.how-text {
+    color: white;
+    font-size: 1.2rem;
+    font-family: 'Oswald', sans-serif;
+    padding-left: 2vw;
+    width: 25vw;
+}
+
+.wasd {
+    width: 15vw;
+    position: absolute;
+    left: 50vw;
+    top: 140vh;
+}
+
+.j {
+    width: 7vw;
+    position: absolute;
+    left: 68vw;
+    top: 145vh;
+}
+
+.footer {
+    background-color: #457b9d;
+    width: 100vw;
+    height: 7vh;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    top: 210vh;
+}
+
+@media (max-width:400px){
+
+    nav {
+        height: 7vh;
+    }
+
+    .logo {
+        font-size: 2rem;
+    }
+
+    .li {
+        font-size: 1rem;
+    }
+
+    .list {
+        width: 50vw;
+    }
+
+    canvas {
+        width: 90vw !important;
+    }
+
+    .game-container {
+        width: 100vw;
+        top: 10vh;
+        left: 5vw;
+    }
+
+    .how-to-play {
+        width: 70vw;
+        left: 15vw;
+    }
+
+    .how-text-container {
+        width: 90vw;
+        left: 5vw;
+    }
+
+    .how-text {
+        font-size: 1.1rem;
+        width: 50vw;
+    }
+    .wasd {
+        width: 35vw;
+        top: 126vh;
+        left: 55vw;
+    }
+
+    .j {
+        width: 20vw;
+        left: 62vw;
+        top: 270vw;
+    }
+}
+
+
+@media only screen and (min-width: 400px) and (max-width: 800px){
+    
+
+    nav {
+        height: 17vh;
+    }
+
+    .logo {
+        font-size: 2rem;
+        bottom: 2vh;
+    }
+
+    .li {
+        font-size: 1.3rem;
+    }
+
+    .game-container {
+        width: 80vw;
+        left: 0vw;
+        top: 30vh;
+    }
+
+    canvas {
+        width: 90vh !important;
+        height: 90vh !important;
+
+    }
+
+    .how-to-play {
+        font-size: 1.2rem;
+        height: 10vh;
+        border-radius: 10px;
+        top: -34vh;
+
+    }
+
+    .how-text-container {
+        height: 45vh;
+        border-radius: 10px;
+        top: -30vh;
+    }
+
+    .how-text {
+        font-size: 1.1rem;
+    }
+
+    .wasd {
+        top: 179vh;
+    }
+
+    .j {
+        top: 187vh;
+    }
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="play.css">
+    <link rel="stylesheet" href="/phaser/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet">
+    <title>Play</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">Play</div>
+        <ul class="list">
+            <li class="li"><a href="index.html" class="li">Home</a></li>
+            <li class="li"><a href="play.html" class="li">Play</a></li>
+            <li class="li"><a href="design.html" class="li">Design</a></li>
+            <li class="li"><a href="team.html" class="li">Team</a></li>
+        </ul>
+    </nav>
+    <div class="background">
+        <div class="black-background">
+            <div class="game-frame">
+                <div class="game-container" id="game-container"></div>
+            </div>
+        </div>
+        <div class="how-to-play">How To Play</div>
+        <div class="how-text-container">
+            <!-- <div class="how-text">Up: "W"</div>
+            <div class="how-text">Down: "S"</div>
+            <div class="how-text">Left: "A"</div>
+            <div class="how-text">Right: "D"</div>
+            <div class="how-text">Fire: "J"</div> -->
+            <div class="how-text">Player 1 uses W, A, S, D to move, J to shoot</div>
+        </div>
+        <img src="wasd.png" alt="wasd picture" class="wasd">
+        <img src="j.png" alt="j key" class="j">
+        <div class="footer">© 2020 Escape the Void</div>
+    </div>
+    <script src="phaser.min.js"></script>
+    <script src="Scene1.js"></script>
+    <script src="Scene2.js"></script>
+    <script src="retry.js"></script>
+    <script src="game.js"></script>
+    <script src="beam.js"></script>
+    <script src="explosion.js"></script>
+</body>
+</html>
